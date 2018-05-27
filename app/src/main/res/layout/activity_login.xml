@@ -69,6 +69,7 @@
         <EditText
             android:id="@+id/etusername"
             android:layout_width="300dp"
+            android:ems="10"
             android:layout_height="wrap_content"
             android:hint="USERNAME"
             android:drawableLeft="@drawable/ic_014_profile"
@@ -77,6 +78,7 @@
         <EditText
             android:id="@+id/etpassword"
             android:layout_width="300dp"
+            android:ems="10"
             android:layout_height="wrap_content"
             android:hint="PASSWORD"
             android:drawableLeft="@drawable/ic_key"
@@ -88,6 +90,7 @@
             android:layout_height="wrap_content"
             android:text="Login"
             android:textStyle="italic"
+            android:drawableLeft="@drawable/ic_enter"
             android:textColor="#fff"
             android:background="@drawable/buttonstyle1"/>
 
