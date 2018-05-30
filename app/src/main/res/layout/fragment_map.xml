@@ -4,18 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/gray">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Maps"
-            android:textSize="25dp"
-            android:textColor="@color/white"
-            android:gravity="center"/>
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=" Normal View"
-            android:textSize="20dp"
+            android:textSize="17dp"
             android:layout_gravity="start"
             android:textAlignment="textStart"
             android:textColor="@color/white"
@@ -42,7 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=" Terrian View"
-            android:textSize="20dp"
+            android:textSize="17dp"
             android:layout_gravity="start"
             android:textAlignment="textStart"
             android:textColor="@color/white"
@@ -58,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=" Satellite View"
-            android:textSize="20dp"
+            android:textSize="17dp"
             android:layout_gravity="start"
             android:textAlignment="textStart"
             android:textColor="@color/white"
