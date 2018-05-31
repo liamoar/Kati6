@@ -1,5 +1,7 @@
 package com.example.welcome.kati6;
 
+import android.content.ClipData;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -87,6 +89,8 @@ public class MapActivity extends AppCompatActivity implements NavigationView.OnN
 
                 break;
         }
+        setTitle(item.getTitle());
+        toolbar.setTitleTextColor(Color.parseColor("#ffffff"));
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }

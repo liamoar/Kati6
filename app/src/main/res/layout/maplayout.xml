@@ -19,7 +19,8 @@
             android:layout_height="?attr/actionBarSize"
             android:background="@color/gray"
             android:elevation="6dp"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            />
 
 
         <fragment
