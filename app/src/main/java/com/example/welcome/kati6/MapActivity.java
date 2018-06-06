@@ -1,5 +1,7 @@
 package com.example.welcome.kati6;
 
+import android.content.ClipData;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -13,7 +15,16 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MapActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.PolylineOptions;
+
+public class MapActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, OnMapReadyCallback{
     EditText user;
     private DrawerLayout drawer;
     Toolbar toolbar;
@@ -36,7 +47,22 @@ public class MapActivity extends AppCompatActivity implements NavigationView.OnN
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                     new HomeFragment()).commit();
             navigationView.setCheckedItem(R.id.nav_home);
+
+            //for map
+            SupportMapFragment mapFragment = (SupportMapFragment)
+                    getSupportFragmentManager().findFragmentById(R.id.fragment_container);
+            mapFragment.getMapAsync(this);//OnMapReadyCallback is interface
         }
+    }
+
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        LatLng l = new LatLng(27.6853, 85.3743);
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(l, 10));
+        googleMap.addMarker(new MarkerOptions().position(l));
+
+
+
     }
 
     @Override
@@ -63,6 +89,8 @@ public class MapActivity extends AppCompatActivity implements NavigationView.OnN
 
                 break;
         }
+        setTitle(item.getTitle());
+        toolbar.setTitleTextColor(Color.parseColor("#ffffff"));
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
@@ -76,6 +104,7 @@ public class MapActivity extends AppCompatActivity implements NavigationView.OnN
             super.onBackPressed();
         }
     }
+
 
 
 }

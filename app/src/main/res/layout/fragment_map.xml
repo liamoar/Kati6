@@ -1,11 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/gray">
 
-    <TextView
+
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="this is map"
-        android:textSize="30sp"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Normal View"
+            android:textSize="17dp"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:id="@+id/normal"
+            android:layout_marginTop="5dp"
+            android:background="@color/darkgray"
+            android:drawableLeft="@drawable/ic_map_normal"
+            android:drawableRight="@drawable/ic_play_arrow"
+            android:paddingRight="6dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Terrian View"
+            android:textSize="17dp"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:id="@+id/terrian"
+            android:layout_marginTop="5dp"
+            android:background="@color/darkgray"
+            android:drawableLeft="@drawable/ic_map_terrian"
+            android:drawableRight="@drawable/ic_play_arrow"
+            android:paddingRight="6dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Satellite View"
+            android:textSize="17dp"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:id="@+id/satellite"
+            android:layout_marginTop="5dp"
+            android:background="@color/darkgray"
+            android:drawableLeft="@drawable/ic_map_satellite"
+            android:drawableRight="@drawable/ic_play_arrow"
+            android:paddingRight="6dp"
+            />
+
+    </LinearLayout>
+
+
 </LinearLayout>

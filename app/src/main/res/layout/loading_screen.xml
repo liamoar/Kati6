@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <me.itangqi.waveloadingview.WaveLoadingView
+        android:id="@+id/waveLoadingView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        app:wlv_borderColor="@color/orange"
+        app:wlv_borderWidth="3dp"
+        app:wlv_progressValue="10"
+        app:wlv_round_rectangle="true"
+        app:wlv_shapeType="circle"
+        app:wlv_titleCenter="Fuel Indicator"
+        app:wlv_titleCenterColor="@android:color/white"
+        app:wlv_titleCenterSize="24sp"
+        app:wlv_titleCenterStrokeColor="#401f1f"
+        app:wlv_titleCenterStrokeWidth="3dp"
+        app:wlv_triangle_direction="north"
+        app:wlv_waveAmplitude="60"
+        app:wlv_waveColor="@color/orange" />
+
+    <!--<SeekBar-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/seekBar"-->
+    <!--android:indeterminate="true"-->
+    <!--android:theme="@style/AppTheme"-->
+    <!--android:rotation="90"-->
+    <!--/>-->
+
+    />
+</RelativeLayout>
